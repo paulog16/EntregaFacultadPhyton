@@ -1,0 +1,31 @@
+#1
+num=4
+#2
+num_dos=12.3
+#3
+suma=num+num_dos
+#4
+resta=num-num_dos
+multiplicacion=num*num_dos
+division=num/num_dos
+print(suma,resta,multiplicacion,division)
+#5
+nombre='paulo'
+#6
+precio=10.4
+#7
+descuento=precio*0.25
+#8
+precio_final=precio-descuento
+#9
+cadena='boca le gano a nacional'
+#10
+longitud=len(cadena)
+#11
+precio=10.5
+entero=int(precio)
+#12
+nombre_dos='paulo'
+apellido='guidolin'
+nombre_completo=nombre_dos+' '+apellido
+print(nombre_completo)
