@@ -25,7 +25,20 @@ longitud=len(cadena)
 precio=10.5
 entero=int(precio)
 #12
+
 nombre_dos='paulo'
 apellido='guidolin'
 nombre_completo=nombre_dos+' '+apellido
 print(nombre_completo)
+#13
+edad=20
+edad+=5
+edad-=10
+#14
+altura=1.75
+altura=altura*4
+altura=altura/3
+#15
+nombre_tres='PAULO'.lower()
+#16
+nombre_tres='PAULO'.lower().title()
