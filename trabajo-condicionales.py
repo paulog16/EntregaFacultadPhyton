@@ -69,4 +69,4 @@ elif(diaS=='jueves'):
     print('dia de practica hablada no se dicta ningun examen')
     
 elif(diaS=='viernes'):
-    print('Dia de ingles extranjero no se dictan examenes')
+    print('Dia de ingles extranjero no se dictan examene')
