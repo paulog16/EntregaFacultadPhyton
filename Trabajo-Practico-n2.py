@@ -145,6 +145,74 @@ if op=='t':
     print(f'el area del triangulo es: {area}')
 
 
+#16-	Haz una calculadora básica pida al usuario dos valores, a y b.
+#Según la opción que desean, realizar la operación:
+#•	Si operación es 1 entonces debemos ver el resultado de a + b
+#•	Si operación es 2 entonces debemos ver el resultado de a * b
+#	Si operación es 3 entonces debemos ver el resultado de a - b
+#•	Si operación es 4 entonces debemos ver el resultado de a / b
+
+valor1=int(input('ingrese valor 1: '))
+valor2=int(input('ingrese valor 2: '))
+op=input('que operacion desea realizar: 1(suma),2(mul),3(resta),4(div): ')
+if op=='1':
+    print(f'el resultado es: {valor1 + valor2}')
+elif op=='2':    
+    print(f'el resultado es: {valor1 * valor2}')
+elif op=='3':
+    print(f'el resultado es: {valor1 - valor2}')
+elif op=='4':
+    print(f'el resultado es: {valor1 / valor2}')
+else:
+    print('opcion incorrecta')    
+
+#17-	Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.17-	Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.
+dia=input('ingrese dia de la semana: ')
+if dia=='lunes':
+    print('es lunes')
+elif dia=='viernes':
+    print('es viernes')
+elif dia=='sabado' or dia=='domingo':
+    print('es finde')
+else:
+    print('no es ni lunes,viernes,sabado o domingo')      
+
+#18-Preguntar al usuario el total de horas trabajadas en el mes y el salario por hora.
+#La jornada de trabajo mínima es de 48 horas. Calcular, dadas las horas trabajadas, si trabajó horas extras y mostrar esta cantidad.
+#Mostrar su salario total, tomando en cuenta que las horas extras serán pagadas un 10% más que las horas laborales comunes.
+      
+horast=int(input('ingrese cant de horas trabajadas: '))
+salph=float(input('ingrese salario por hora: '))
+if horast>0 and horast<=48:
+    salTotal=horast*salph
+    print(f'usted tiene que cobrar ${salTotal}')
+elif horast>0 and horast>48:
+    dif=horast-48
+    pagohex= (dif*salph)+(dif*salph)*0.10
+    salTotal=(horast*salph)+pagohex
+    print(f'usted tiene que cobrar ${salTotal}')
+
+#19-Determinar cuánto se debe pagar por una cantidad de lápices considerando que si son 1000 o más, existe un descuento de 7% y teniendo en cuenta que el costo por lápiz es de $60; de lo contrario no hay descuento.
+cant=int(input('ingrese cant de lapiz'))
+if cant<1000:
+    total=cant*60
+    print(f'tenes que pagar ${total} no hay descuento')
+elif cant>=1000:
+    descuento=(cant*60) *0.07
+    print(descuento)
+    total=(cant*60)-descuento
+    print(f'tenes que pagar ${total} si hay descuento')
+#20-Determinar si un alumno aprueba o reprueba un curso, sabiendo que aprobara si su promedio de cuatro (4) notas, es mayor o igual a 6; caso contrario saldrá desaprobado.
+nota1=float(input('ingrese nota1:'))
+nota2=float(input('ingrese nota2: '))
+nota3=float(input('ingrese nota3: '))
+nota4=float(input('ingrese nota4: '))
+prom=(nota1+nota2+nota3+nota4)/4
+if prom<60:
+    print('desaprobado')
+else:
+    print('aprobado')
+
 
 
 
