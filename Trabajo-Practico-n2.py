@@ -77,6 +77,42 @@ else:
 
 #10-Escribir un programa para una empresa que tiene salas de juegos para todas las edades y quiere calcular de forma automática el precio que debe cobrar a sus clientes por entrar. El programa debe preguntar al usuario la edad del cliente y mostrar el precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar $500 y si es mayor de 18 años, $1000.
 
+edad=int(input('ingrese edad: '))
+if edad<4:
+    print('entra gratis')
+elif edad>=4 and edad <=18:
+    print('debe pagar $500')
+else:
+    print('debe pagar $1000')
+
+#11-	La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los ingredientes para cada tipo de pizza aparecen a continuación.
+#•	Ingredientes vegetarianos: Pimiento y tofu.
+#•	Ingredientes no vegetarianos: Peperoni, Jamón y Salmón.
+#Escribir un programa que pregunte al usuario si quiere una pizza vegetariana o no, y en función de su respuesta le muestre un menú con los ingredientes disponibles para que elija. Solo se puede elegir un ingrediente además de la mozzarella y el tomate que están en todas la pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y todos los ingredientes que lleva.
+
+tipopizza=input('desea una pizza vegetariana o no?')
+if tipopizza=='si':
+    print('INGREDIENTES:PIMIENTO,TOFU ')
+    ing=input('ingrese el ingrediente que desea: ')
+    if ing=='pimiento':
+        print('usted eligio una pizza vegetaria con pimiento')
+    else:
+        print('usted eligio una pizza vegetaria con tofu')    
+else:
+    print('INGREDIENTES:PEPERONI,JAMON,SALOMON ')
+    ing=input('ingrese el ingrediente que desea: ')
+    if ing=='peperoni':
+        print('usted eligio una pizza no vegetaria con peperoni')
+    elif ing=='jamon':
+        print('usted eligio una pizza no vegetaria con jamon')
+    else:
+        print('usted eligio una pizza no vegetaria con jamon')
+            
+#12-Escriba un programa que pida el año actual y un año cualquiera y que escriba cuántos años han pasado desde ese año o cuántos años faltan para llegar a ese año.
+anioActual=int(input('igrese año actual: '))
+        
+
+
 
 
    
