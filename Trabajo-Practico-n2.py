@@ -14,7 +14,7 @@ nombre2=input('ingrese nombre2: ')
 if (nombre1[0]==nombre2[0]):
     print('coincidencia')
 else:
-    print('no coincidencia')
+    print('no oincidencia')
 
 #4-	Crear un programa que permita al usuario elegir un candidato por el cual votar. Las posibilidades son: candidato A por el partido rojo, candidato B por el partido verdad, candidato C por el partido azul.
 #Según el candidato elegido (A, B o C) se debe imprimir el mensaje: ‘Usted ha votado por el partido [color del candidato elegido].
