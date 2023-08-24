@@ -94,23 +94,59 @@ tipopizza=input('desea una pizza vegetariana o no?')
 if tipopizza=='si':
     print('INGREDIENTES:PIMIENTO,TOFU ')
     ing=input('ingrese el ingrediente que desea: ')
-    if ing=='pimiento':
-        print('usted eligio una pizza vegetaria con pimiento')
-    else:
-        print('usted eligio una pizza vegetaria con tofu')    
+    print(f'usted eligio una pizza vegana con {ing}')  
 else:
     print('INGREDIENTES:PEPERONI,JAMON,SALOMON ')
     ing=input('ingrese el ingrediente que desea: ')
-    if ing=='peperoni':
-        print('usted eligio una pizza no vegetaria con peperoni')
-    elif ing=='jamon':
-        print('usted eligio una pizza no vegetaria con jamon')
-    else:
-        print('usted eligio una pizza no vegetaria con jamon')
+    print(f'usted eligio una pizza no vegetariana con {ing}')
             
 #12-Escriba un programa que pida el año actual y un año cualquiera y que escriba cuántos años han pasado desde ese año o cuántos años faltan para llegar a ese año.
 anioActual=int(input('igrese año actual: '))
-        
+anioCualquiera=int(input('ingrese año cualquiera'))
+resto=abs(anioActual-anioCualquiera)
+print(f'han pasado o falta para llegar: {resto} años') 
+
+#13-Escriba un programa que pida dos números enteros y que escriba si el mayor es múltiplo del menor. Haciendo que el programa avise cuando se escriben valores negativos o nulos.
+
+num1=int(input('ingrese num1: '))
+num2=int(input('ingrese num2: '))
+
+if num1<0 and num2<0:
+    print('los numeros son negativos')
+else:
+    if num1>num2:
+        if (num1 % num2)==0:
+            print(f'el numero {num1} es multiplo de {num2}')
+        else:
+            print(f'el numero {num1} no es multiplo de {num2}')
+    else:
+         if (num2 % num1)==0:
+            print(f'el numero {num2} es multiplo de {num1}')
+         else:
+            print(f'el numero {num2} no es multiplo de {num1}')     
+
+#14-Escriba un programa que pida los coeficientes de una ecuación de primer grado (a x + b = 0) y escriba la solución.
+#Se recuerda que una ecuación de primer grado puede no tener solución, tener una solución única, #o que todos los números sean solución. Se recuerda que la fórmula de las soluciones es 
+#x = -b / a
+
+b=int(input('ingrese valor de b: '))
+a=int(input('ingrese valor de a: '))
+print(f'{a}x + {b} = 0 ')
+x= -b/a
+print(f'el valor de x es: {x}')
+
+#15-	Escriba un programa que pregunte primero si se quiere calcular el área de un triángulo o la de un círculo. Si se contesta que se quiere calcular el área de un triángulo (escribiendo T o t), el programa tiene que pedir entonces la base y la altura y escribir el área. Si se contesta que se quiere calcular el área de un círculo (escribiendo C o c), el programa tiene que pedir entonces el radio y escribir el área.
+
+op=input('que desea calcular? triangulo(t) o circulo(c): ')
+if op=='t':
+    base=float(input('ingrese base'))
+    altura=float(input('ingrese altura'))
+    area= 1/2 * base * altura
+    print(f'el area del triangulo es: {area}')
+
+
+
+
 
 
 
