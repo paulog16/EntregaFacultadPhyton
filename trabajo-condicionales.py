@@ -32,15 +32,8 @@ print(f'{diaS}/{dd}/{mm}')
 
 
 if(diaS=='lunes' or diaS=='martes' or diaS=='miercoles' or diaS=='jueves' or diaS=='viernes' or 
-   diaS=='sabado' or diaS=='domingo' ):
-   if(int(dd)>0 and int(dd)<=31):
-         if(int(mm)>0 and int(mm)<=12):
-           print('la fecha es valida') 
-         else:
-             print('fecha invalida')
-   else:
-       print('fecha invalida')
-
+   diaS=='sabado' or diaS=='domingo' ) and (int(dd)>0 and int(dd)<=31) and (int(mm)>0 and int(mm)<=12):
+   print('la fecha es valida') 
 else:
     print('la fecha es invalida')
 
