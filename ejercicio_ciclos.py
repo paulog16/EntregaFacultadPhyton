@@ -25,9 +25,6 @@
 Al finalizar, informar la cantidad de dígitos pares y de dígitos impares leídos en total."""
 contPares = 0
 contimPares = 0
-parNum = 0
-imparNum = 0
-
 while True:
     print("")
     num = int(input("ingrese un num, ingrese 0 para terminar: "))
