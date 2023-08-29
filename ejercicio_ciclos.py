@@ -15,7 +15,7 @@ for p in arregloM:
             ind = (ind+numCorrer)%26
             msj_enc += abecedario[ind] 
         else:
-              msj_enc=letra   
+              msj_enc+=letra   
     arregloPalabras.append(msj_enc)
 print(arregloPalabras)   
 
