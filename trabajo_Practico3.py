@@ -95,9 +95,26 @@ for num in range(1,number+1): #recorre del 1 hasta el numero ingresado
         divisores.append(num)
 
 print(f'los divisores de ese numero son {divisores}')        
+#16-Escriba un programa que pregunte cuántos números se van a introducir, pida esos números y escriba cuántos negativos ha introducido.
+quantity=int(input('ingrese cantidad de numeros: '))
+nums=[]
+contNeg=0
+for i in range(1,quantity+1):
+    num=int(input(f'ingrese numero {i}:'  ))
+    nums.append(num)
+print(nums)    
+for n in nums:
+    if n<0:
+        contNeg+=1    
+print(f'en total hay {contNeg} numeros negativos')
 
-
-   
+#17-Solicitar al usuario que ingrese una frase y luego imprimir un listado de las vocales que aparecen en esa frase (sin repetirlas).
+vowels=set() #set no permite elementos repetidos
+sentence=input('ingrese frase: ')
+for v in sentence:
+    if v=='a' or v=='e' or v=='i' or v=='o' or v=='u':
+        vowels.add(v)
+print(f'las vocales en la oracion son {vowels}')        
 
 
 
