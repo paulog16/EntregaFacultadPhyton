@@ -63,10 +63,39 @@ if (number%number==0)and(number%1==0):
     print('primo')
 else:
     print('no primo')  
-# 
+# 11-	Escribir un programa que pida al usuario una palabra y luego muestre por pantalla una a una las letras de la palabra introducida empezando por la última.
 word=input('ingrese una palabra: ')
 for i in word[::-1]: #esto hace que lea de atras hacia adelante
     print(i) 
+
+#12-Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla el número de veces que aparece la letra en la frase.
+sentence=input('ingrese frase: ')
+letter=input('ingrese letra a buscar: ')
+contLetter=0
+for i in sentence:
+    if i==letter: #i recorre toda la frase, si la i es igual a la letra que le decimos, el contador suma 1
+        contLetter+=1
+print(f'la letra {letter} se encuentra {contLetter} veces ')
+
+#13-Escribir un programa que muestre el eco de todo lo que el usuario introduzca hasta que el usuario escriba “salir” que terminará.
+while True:
+    word=input('ingrese palabra: ')
+    print(word)
+    if word=='salir':
+        break
+print('salio')
+#14-Escriba un programa que pida dos números enteros y escriba qué números son pares y cuáles impares desde el primero hasta el segundo.
+
+
+#15-Escriba un programa que pida un número entero mayor que cero y que escriba sus divisores.
+divisores=[]
+number=int(input('ingrese numero: '))
+for num in range(1,number+1): #recorre del 1 hasta el numero ingresado
+    if number%num==0: # se fija si la posicion en la que va es divisor del numero
+        divisores.append(num)
+
+print(f'los divisores de ese numero son {divisores}')        
+
 
    
 
