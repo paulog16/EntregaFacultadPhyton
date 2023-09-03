@@ -31,7 +31,7 @@ for p in range(1, ages):
 
     # 6-	Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo, de altura el número introducido.
     hight = int(input("ingrese altura: "))
-    for i in range(1, altura + 1):
+    for i in range(1, hight + 1):
         print("*" * i)
 
 # 7-Escribir un programa que muestre por pantalla las tablas de multiplicar del 1 al 10.
