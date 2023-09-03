@@ -1,16 +1,20 @@
-number=int(input('ingrse num: '))
-for i in range(0,number+1,2):
-    for j in range(0,number+1,-2):
-        print(j,end=(''))
-        print('')
+
+def facto(num):
+    if num<0:
+        return 0
+    elif num==0:
+        return 1
+    else:
+        return num *(num-1)
+    
+num = int(input("Ingrese un número para calcular su factorial: "))
+resultado = facto(num)
+print(f"El factorial de {num} es {resultado}")    
+
+      
+
         
-
-    
-                
-    
-
-    
-
- 
-
+         
+      
   
+    
