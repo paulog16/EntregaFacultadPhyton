@@ -127,11 +127,17 @@ mes=int(input('ingrese mes '))
 anio=int(input('ingrese año '))
 print(f'{dia}/{mes}/{anio}')
 #20:Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
-dia=input('ingrese dia')
-mes=input('ingrese mes')
-anio=input('ingrese año')
-fecha=(dia+mes+anio).upper
-print(fecha)
+fecha=input('ddmmaaa')
+dia=fecha[0:fecha.find('m')].lower
+mes=fecha[fecha.find('d'):fecha.find('a')].lower
+anio=fecha[fecha.find('m')+1:]
+fechaCompleta=dia+mes+anio
+print(fechaCompleta)
+#dia_dd_mm=input('dia, dd/mm')
+# diaS=dia_dd_mm[0:dia_dd_mm.find(',')].lower()
+# dd=dia_dd_mm[dia_dd_mm.find(' ')+1:dia_dd_mm.find('/')]
+# mm=dia_dd_mm[dia_dd_mm.find('/')+1:]
+# print(fecha)
 #21.Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto, 
 # para saber cuántos tanques de combustible consumirá el viaje entero.
 #Para eso deben ingresar: cuántos kilómetros puede recorrer su moto con 1 litro de combustible,
