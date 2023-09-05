@@ -132,6 +132,7 @@ dia=fecha[0:2]
 mes=fecha[2:4]
 anio=fecha[4:8]
 fechaCompleta=dia+mes+anio
+#hola
 print(fechaCompleta)
 #dia_dd_mm=input('dia, dd/mm')
 # diaS=dia_dd_mm[0:dia_dd_mm.find(',')].lower()
