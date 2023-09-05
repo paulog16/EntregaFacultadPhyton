@@ -128,9 +128,10 @@ anio=int(input('ingrese año '))
 print(f'{dia}/{mes}/{anio}')
 #20:Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
 fecha=input('ddmmaaa')
-dia=fecha[0:fecha.find('m')].lower
-mes=fecha[fecha.find('d'):fecha.find('a')].lower
-anio=fecha[fecha.find('m')+1:]
+dia=fecha[0:2]
+mes=fecha[2:4]
+anio=fecha[4:8]
+
 fechaCompleta=dia+mes+anio
 print(fechaCompleta)
 #dia_dd_mm=input('dia, dd/mm')

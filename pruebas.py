@@ -1,6 +1,7 @@
-fecha=input('ddmmaaaa')
-dia=str(fecha[0:2])
-mes=str(fecha[2:4])
-anio=str(fecha[4:8])
-fechaCompleta=(dia+mes+anio)
+fecha=input('ddmmaaa')
+dia=fecha[0:2]
+mes=fecha[2:4]
+anio=fecha[4:8]
+
+fechaCompleta=dia+mes+anio
 print(fechaCompleta)
