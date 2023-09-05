@@ -29,11 +29,11 @@ a=input(f'{nombre}, ¿cual es tu cancion favorita?')
 precio=float(input('precio: '))
 #c)	edad = int(input(“Edad: “))
 #print(tu edad es, edad)
-print(f'tu edad es, {edad}')
+#print(f'tu edad es, {edad}')
 
 #d)	edad = int(input(“Edad: “))
 #print(“Veamos si tu edad es 18…”, edad=18)
-print(f'veamos si tu edad es 18... {edad==18}')
+#print(f'veamos si tu edad es 18... {edad==18}')
 
 #6.	Calcular la media de tres números pedidos por teclado.
 num1=float(input('ingrese num1'))
