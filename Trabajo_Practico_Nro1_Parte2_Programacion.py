@@ -13,8 +13,8 @@ cateto_b = float(input("Ingresa la longitud del segundo cateto: "))
 hipotenusa = math.sqrt(cateto_a ** 2 + cateto_b ** 2)
 print(f"La hipotenusa del triángulo rectángulo es: {hipotenusa}")
 #3.	Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.
-num1=5
-num2=7
+num1=float(5)
+num2=float(7)
 print(f'suma: {num1+num2}, resta: {num1-num2}, multiplicacion: {num1*num2}, division: {num1/num2}')
 #4.	Escribir un programa que convierta un valor dado en grados Fahrenheit a grados Celsius. Recordar que la fórmula para la conversión es:
 f=float(input('ingrese grados f'))
@@ -118,7 +118,7 @@ print(f'Ahora estás en la matrix {usuario}')
 #18.Hacer un programa que solicite al usuario cuánto costó una cena en un restaurante.
 #  A ese valor, sumarle un 6.2% en concepto de servicio y un 10% de propina. Imprimir en pantalla el monto final a pagar.
 cena=int(input('cuanto costo la cena? '))
-preciototal=cena+(cena*0.6)+(cena*0.10)
+preciototal=cena+(cena*0.062)+(cena*0.10)
 print(f'el monto total a pagar es: {preciototal}')
 #19.Solicitar al usuario que ingrese el día, mes y año de su nacimiento y almacenar cada uno de ellos en una variable numérica 
 # (en total, tres variables diferentes). Finalmente, mostrar la fecha en formato dd/mm/aaaa.
@@ -127,10 +127,11 @@ mes=int(input('ingrese mes '))
 anio=int(input('ingrese año '))
 print(f'{dia}/{mes}/{anio}')
 #20:Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA.
-from datetime import datetime
-fecha_str = "16022003"
-fecha_obj = datetime.strptime(fecha_str,"%d%m%Y")
-print(fecha_obj)
+dia=input('ingrese dia')
+mes=input('ingrese mes')
+anio=input('ingrese año')
+fecha=(dia+mes+anio).upper
+print(fecha)
 #21.Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto, 
 # para saber cuántos tanques de combustible consumirá el viaje entero.
 #Para eso deben ingresar: cuántos kilómetros puede recorrer su moto con 1 litro de combustible,

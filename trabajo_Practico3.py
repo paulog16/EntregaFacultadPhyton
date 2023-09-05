@@ -40,7 +40,7 @@ for i in range(1):
     print("tabla del 1")
     for j in range(1, 10):
         print(f"{i} x {j} es : {i*j}")
-# 6-Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo, de altura el número introducido.
+# 8-Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo, de altura el número introducido.
 
 number = int(input("ingrese un numero: "))
 for i in range(1, number + 1, 2):
