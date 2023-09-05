@@ -34,10 +34,7 @@ print(f'{diaS}/{dd}/{mm}')
 if(diaS=='lunes' or diaS=='martes' or diaS=='miercoles' or diaS=='jueves' or diaS=='viernes' or 
    diaS=='sabado' or diaS=='domingo' ) and (int(dd)>0 and int(dd)<=31) and (int(mm)>0 and int(mm)<=12):
    print('la fecha es valida') 
-else:
-    print('la fecha es invalida')
-
-if(diaS=='lunes' ):
+   if(diaS=='lunes' ):
     print('Clases nivel inicial')
     cantAlumnos=int(input('cuantos alumnos hay: '))
     aprobados=int(input('cuantos alumnos aprobaron: '))    
@@ -73,3 +70,6 @@ elif(diaS=='viernes') and  ((int(dd)==1 and int(mm)==1) or (int(dd)==1 and int(m
     print(f'el total que recibe el colegio es: {total}$')
     
     # print('Dia de ingles extranjero no se dictan examenes')
+else:
+    print('la fecha es invalida')
+
