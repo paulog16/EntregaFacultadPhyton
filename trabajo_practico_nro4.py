@@ -85,7 +85,7 @@ while True:
         break
     es_primo=True #declaro una variable si es o no primo
     if n>1: #verifico que el numero sea mayor a 1
-        for i in range(2,n): #recorro del 2 hasta el n
+        for i in range(1,n+1): #recorro del 1 hasta el n
             if n %i==0: #si el n % i ==0
                 es_primo=False #no es primo
                 break
@@ -119,10 +119,10 @@ for i in range(1,21):
 nums=[2,3,4,5,2,1,4,8,9]
 numE=int(input('what search a number: '))
 for i in nums:
-    if i==numE:
+    if nums[i]==numE:
         break
     print(i)
-print(f'la lista salio en el numero: {numE}')    
+print(f'la lista salio en el numero: {numE} y era la posicion {i}')    
 
 
 '''7.	Crea un programa que muestre un menú de opciones (por ejemplo, opciones 1, 2, 3). Utiliza un bucle while para permitir al usuario seleccionar una opción. Si el usuario ingresa "0", utiliza break para salir del bucle (Mostrar un mensaje por cada opción elegida).'''
