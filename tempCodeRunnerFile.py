@@ -1,7 +1,18 @@
-nums=[2,3,4,5,2,1,4,8,9]
-numE=int(input('what search a number: '))
-for i in nums:
-    if nums[i]==numE:
-        break
-    print(i)
-print(f'la lista salio en el numero: {numE} y era la posicion {i}')
+sueldobase=int(input('cuanto es el sueldo base? '))
+asis=input('asistio todo el mes?s/n ')
+if asis.lower()=='s':
+    horas=int(input('cuantas horas trabajo el domingo? '))
+    if horas>=3 and horas<=5:
+        extra=sueldobase*0.03
+        sueldobase=sueldobase+extra
+        print(f'el sueldo final es de {sueldobase}')
+    elif horas>=6 and horas<=10:
+        extra=sueldobase*0.10
+        sueldobase=sueldobase+extra
+        print(f'el sueldo final es de {sueldobase}')
+else:
+    horas=int(input('cuantas horas trabajo el domingo? '))
+    if horas>=3 and horas<=10:
+        extra=sueldobase*0.02
+        sueldobase=sueldobase+extra
+        print(f'el sueldo final es de {sueldobase}')
