@@ -23,28 +23,21 @@ print(arregloPalabras)
 """Crear un programa que solicite el ingreso de números enteros positivos, hasta que el usuario ingrese el
 0. Por cada número, informar cuántos dígitos pares y cuántos impares tiene.
 Al finalizar, informar la cantidad de dígitos pares y de dígitos impares leídos en total."""
-contPares = 0
-contimPares = 0
-contParesNum = 0
-contimParesNum = 0
+contparesT=0
+contimparesT=0
 while True:
-    print("")
-    num = int(input("ingrese un num, ingrese 0 para terminar: "))
-    if num == 0:
+    n=int(input('ingrese numeros positivos, ingrese 0 para finalizar: '))
+    if n==0:
         break
-    longitud = str(num)
-    for p in longitud:
-        for j in p:
-            if int(j) > 0:
-                if int(j) % 2 == 0:
-                    contPares += 1
-                    contParesNum += 1
-                else:
-                    contimPares += 1
-                    contimParesNum += 1
-            print(j, end=" ")
-    print(f'el numero tiene {contParesNum} numeros pares y {contimParesNum} numeros impares')
-    contimParesNum=0
-    contParesNum=0    
-print("terminado")
-print(f"en total hay {contPares} numeros pares y {contimPares} impares")
+    contpares=0
+    contimpares=0
+    for i in str(n):
+        if int(i)%2==0:
+            contpares+=1
+            contparesT+=1
+        else:
+            contimpares+=1
+            contimparesT+=1
+    print(f'el numero tiene {contpares} numeros pares y {contimpares} numeros impares')
+print(f'numeros pares totales: {contparesT}')    
+print(f'numeros impares totales: {contimparesT}') 
