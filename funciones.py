@@ -1,8 +1,10 @@
 
-def ahorcado(palabra,intentos):
+def ahorcado(palabra,intentos,letrasI):
     spaces = ["_"] * len(palabra)
     while True:
         letra = input('Ingrese una letra: ')
+        letrasI.append(letra)
+        print(f'letras ingresadas: {letrasI}')
         for i, character in enumerate(palabra):
             if letra == character:
                 spaces[i] = letra
