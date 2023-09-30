@@ -7,6 +7,7 @@ def ahorcado(palabra,intentos):
                 spaces[i] = letra
                 print(" ".join(spaces))
         if letra not in palabra:
+            print('la letra no esta en la palabra!')
             intentos-=1    
         if intentos==0:
             print('se te acabaron los intentos, perdiste')
