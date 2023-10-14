@@ -178,3 +178,116 @@ print(
 )
 dif4 = dif(matriz, 3)
 print(dif4)
+#9
+import random
+
+# Función para crear un tablero con cartas aleatorias
+def crear_tablero(filas, columnas):
+    numeros = list(range(1, filas * columnas // 2 + 1))
+    cartas = numeros + numeros
+    random.shuffle(cartas)
+    tablero = [[0] * columnas for _ in range(filas)]
+
+    for fila in range(filas):
+        for columna in range(columnas):
+            tablero[fila][columna] = cartas.pop()
+
+    return tablero
+
+# Función para imprimir el tablero con cartas boca abajo
+def imprimir_tablero(tablero, filas, columnas):
+    for fila in range(filas):
+        for columna in range(columnas):
+            if tablero[fila][columna] == 0:
+                print("?", end="\t")
+            else:
+                print("X", end="\t")
+        print()
+
+# Función para jugar al Memotest
+def jugar_memotest(tablero, filas, columnas):
+    parejas_encontradas = 0
+    while parejas_encontradas < filas * columnas // 2:
+        imprimir_tablero(tablero, filas, columnas)
+        fila1 = int(input("Ingresa la fila de la primera carta: ")) - 1
+        columna1 = int(input("Ingresa la columna de la primera carta: ") - 1)
+        fila2 = int(input("Ingresa la fila de la segunda carta: ")) - 1
+        columna2 = int(input("Ingresa la columna de la segunda carta: ") - 1)
+
+        if (
+            0 <= fila1 < filas
+            and 0 <= columna1 < columnas
+            and 0 <= fila2 < filas
+            and 0 <= columna2 < columnas
+            and (fila1, columna1) != (fila2, columna2)
+            and tablero[fila1][columna1] == tablero[fila2][columna2]
+        ):
+            print("¡Encontraste una pareja!")
+            tablero[fila1][columna1] = 0
+            tablero[fila2][columna2] = 0
+            parejas_encontradas += 1
+        else:
+            print("No es una pareja válida. Inténtalo de nuevo.")
+
+    print("¡Has encontrado todas las parejas!")
+
+# Tamaño del tablero
+filas = 4
+columnas = 4
+
+# Crear y jugar el Memotest
+tablero = crear_tablero(filas, columnas)
+jugar_memotest(tablero, filas, columnas)
+#10
+
+def obtener_diagonales(matriz):
+    # Obtener la longitud de la matriz (dimensión)
+    n = len(matriz)
+    
+    # Inicializar listas para almacenar las diagonales
+    diagonal_principal = []
+    diagonal_inversa = []
+    
+    # Recorrer la matriz para obtener las diagonales
+    for i in range(n):
+        diagonal_principal.append(matriz[i][i])  # Elementos de la diagonal principal
+        diagonal_inversa.append(matriz[i][n - 1 - i])  # Elementos de la diagonal inversa
+    
+    return diagonal_principal, diagonal_inversa
+
+# Ejemplo de una matriz cuadrada
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+diagonal_principal, diagonal_inversa = obtener_diagonales(matriz)
+
+print("Diagonal Principal:", diagonal_principal)
+print("Diagonal Inversa:", diagonal_inversa)
+#11
+
+dicc={'Euro':'€',
+     'Dolar':'$',
+     'Yen':'¥'}
+
+question=input('que divisa desea ver? \n')
+
+if question in dicc:
+    print(f'si esta, el simbolo es: {dicc[question]}')
+else:
+    print('no se encuentra la divisa')    
+
+#12
+
+dic={}
+nombre=input('ingrese nombre: ')
+dic['nombre']=nombre
+edad=input('ingrese edad: ')
+dic['edad']=edad
+direccion=input('ingrese direccion: ')
+dic['direccion']=direccion
+telefono=input('ingrese telefono: ')
+dic['telefono']=telefono
+print(dic)
