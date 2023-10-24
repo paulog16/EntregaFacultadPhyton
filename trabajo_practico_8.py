@@ -54,13 +54,13 @@ print(result)
 
 def par(n):
     if n == 0:
-        return True  # 0 se considera par
+        return True  
     else:
         return impar(n - 1)
 
 def impar(n):
     if n == 0:
-        return False  # 1 se considera impar
+        return False  
     else:
         return par(n - 1)
 
@@ -200,7 +200,7 @@ else:
 
 
 
-#factorial
+
 
 
 
