@@ -45,8 +45,8 @@ def is_mutant(adn): #creo la funcion "is_mutant"
 
     
 
-    for row in range(len(adn)-3):  # recorre las filas de la matriz
-        for column in range(len(adn)-3):  # recorre las columnas de la matriz
+    for row in range(len(adn)-3): #estos bucles se detienen dos pasos antes del final de la matriz (hasta len(adn) - 3) para asegurarse de que  haya suficientes elementos en la diagonal.
+        for column in range(len(adn)-3):  
             diagonal = []  # se crea una lista llamada diagonal para añadir elementos de las diagonales
             for k in range(4):  # recorre 4 elementos para obtener una secuencia de 4 elementos
                 diagonal.append(adn[row + k][column + k])  # Agrega cada elemento a la lista diagonal
